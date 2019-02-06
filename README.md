@@ -11,9 +11,9 @@ But as early as 1997 in an interesting series of benchmarks in the [October 1997
 
 > "The displacement addressing modes of modern architectures make array indexing so fast that programmers (usually) need no longer bother with "pointerizing" array accesses."
 
-Here we show that things can change. In the 21st century with some architectures and compilers, although it's not quite like the 70s all over again, some speed has returned.
+Here we see that in recent times, with some architectures and compilers some speed has returned.
 
-Here we compare the performance of an array indexed insertion sort routine:
+In a manner similar to what has been done in the past, to test the speed of pointerized code, we compare the performance of an array indexed insertion sort routine:
 
     void ai_sort(int x[], int *rp)
     { 
@@ -44,8 +44,7 @@ which is substantially similar to the is2() routine found in [Jon Bentley's Unix
         }
     }
 
-
-We tested these routines on linux using the gcc compiler with -O3 optimizations on three different computers. We sorted arrays of 100,000 random integers. Here are some results. The percentage shown is the improvement of the pointerized routine over the indexed one.
+We tested these routines on linux using the gcc compiler with -O3 optimization. We sorted arrays of 100,000 random integers. Here are some results. The percentage shown is the improvement of the pointerized routine over the indexed one.
 
     Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
