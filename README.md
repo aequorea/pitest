@@ -1,5 +1,5 @@
-# pitest
-### Pointerized insertion sort test
+## pitest
+#### Pointerized insertion sort test
 
 "Pointerizing" code is not exactly a time-honored speedup technique. If you look at the first edition of [K&R](https://archive.org/details/TheCProgrammingLanguageFirstEdition) that came out in 1978, on page 93 you'll find they say:
 
