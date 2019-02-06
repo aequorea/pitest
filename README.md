@@ -15,7 +15,7 @@ Here we show that things can change. In the 21st century with some architectures
 
 Here we compare the performance of an array indexed insertion sort routine:
 
-    void bsort(int x[], int *rp)
+    void ai_sort(int x[], int *rp)
     { 
         int n = rp-x+1;
         int i, j, t;
@@ -31,7 +31,7 @@ Here we compare the performance of an array indexed insertion sort routine:
     
 which is substantially similar to the is2() routine found in [Jon Bentley's Unix Review article from Oct. 1997](http://web.archive.org/web/20010509103120/http://www.unixreview.com/articles/1997/9710/9710expbi/expbi.htm), with a "pointerized" version of the same:
 
-    void isort(int *lp, int *rp)
+    void pi_sort(int *lp, int *rp)
     {
         int *ip, *jp, t;
     
