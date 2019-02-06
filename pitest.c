@@ -70,10 +70,11 @@ int main()
     srand(ns_time());
     ulli ai_time = time_sort(A1, ELEMENTS, ai_sort);
     ulli pi_time = time_sort(A1, ELEMENTS, pi_sort);
-    double ratio = (double) pi_time/ (double) ai_time;    
+    double ratio = (double) pi_time / (double) ai_time;    
     ulli ai_ms = ai_time/1000000;
     ulli pi_ms = pi_time/1000000;
     double percent = 100.0*(1.0-ratio)/ratio;
-    printf(" %d: pointerized %llu ms, array indexed %llu ms -- %2.1lf %%\n", ELEMENTS, pi_ms, ai_ms, percent);
+    printf("%d: indexed %llu ms, pointerized %llu ms -- %2.1lf %%\n",\
+           ELEMENTS, ai_ms, pi_ms, percent);
 }
 
