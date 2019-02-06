@@ -7,11 +7,11 @@
 
 The earliest benchmark I could find where pointerized code was directly compared with a non-pointerized routine was in the book "Writing efficient programs, 1982" by Jon Bentley. On page 95 we see tests of a pointerized insertion sort where the pointerized version compiled with optimizations ran more than twice as fast as the non-pointerized version (fragments M6 vs. M5). These tests were done by John Majernik on a PDP 11/70, a computer from 1975.
 
-But as early as 1997 in an interesting series of benchmarks in the [October 1997 issue of Unix Review](http://web.archive.org/web/20010509103120/http://www.unixreview.com/articles/1997/9710/9710expbi/expbi.htm), Jon Bentley found that in the cases he was testing, pointerized code was rarely if ever faster than the normal array indexed code. In six cases on three different machines where he looked at optimized code for routines that accessed arrays and then had their inner loops pointerized, only one case showed significant speedup, one case ran the same, and four cases actually ran slower when pointerized. He suggested, 
+But as early as 1997 in an interesting series of benchmarks in the [October 1997 issue of Unix Review](http://web.archive.org/web/20010509103120/http://www.unixreview.com/articles/1997/9710/9710expbi/expbi.htm), Jon Bentley found that in the cases he was testing, pointerized code was rarely if ever faster than the normal array indexed code. In six cases on three different machines where he looked at optimized code for routines that accessed arrays and then had their inner loops pointerized, only one case showed any speedup, one case ran the same, and four cases actually ran slower when pointerized. He suggested, 
 
 > "The displacement addressing modes of modern architectures make array indexing so fast that programmers (usually) need no longer bother with "pointerizing" array accesses."
 
-Here we see that in recent times, with some architectures and compilers some speed has returned.
+Here we see that in recent times, at least with some architectures and compilers, some speed has returned.
 
 In a manner similar to what has been done in the past, to test the speed of pointerized code, we compare the performance of an array indexed insertion sort routine:
 
