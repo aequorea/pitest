@@ -45,14 +45,11 @@ which is substantially similar to the is2() routine found in [Jon Bentley's Unix
     }
 
 
-We tested these routines on linux using the gcc compiler with -O3 optimizations on three different computers. We sorted arrays of 100,000 random integers. The percentage speed improvement of the pointerized insertion sort over the array indexed one were:
+We tested these routines on linux using the gcc compiler with -O3 optimizations on three different computers. We sorted arrays of 100,000 random integers. Here are some results. The percentage shown is the improvement of the pointerized routine over the indexed one.
 
-    Intel Core I5: 24.5 %
-    AMD Athlon 64:  6.3 %
-     Raspberry pi:  0.3 %
- 
-So at least on the x64 machines, some advantage can be gained from pointerized code, and even on the Raspberry pi, nothing was lost from the pointerization.
+    Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
+    gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
 
-More complete data may be found [here](https://github.com/aequorea/pisort/tree/master/bm).
+    100000: indexed 4170 ms, pointerized 3685 ms -- 13.2 %
 
-If you would like to try out the benchmark, make sure you have installed gcc, download the archive and run bench.py. To reduce the possibility of "linker bias" tilting the results, it builds and tests six different versions of the benchmark executable where the three different object files are linked in six different ways. The data is collected and averaged over runs of these executables.
+
