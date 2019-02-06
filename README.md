@@ -56,5 +56,13 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
 
     100000: indexed 4170 ms, pointerized 3685 ms -- 13.2 %
+    
+    
+      ARMv7 Processor rev 4 (v7l)
+    gcc (Raspbian 6.3.0-18+rpi1+deb9u1) 6.3.0 20170516
+
+    100000: indexed 9073 ms, pointerized 8997 ms -- 0.8 %
+
+
 
 
