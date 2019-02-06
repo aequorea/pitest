@@ -51,6 +51,7 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
 
     100000: indexed 1127 ms, pointerized 901 ms -- 25.2 %
 
+
     Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
 
