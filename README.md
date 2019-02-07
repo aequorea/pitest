@@ -1,7 +1,7 @@
 ## pitest
 #### Pointerized insertion sort test
 
-"Pointerizing" code is not exactly a time-honored speedup technique. If you look at the first edition of [K&R](https://archive.org/details/TheCProgrammingLanguageFirstEdition) that came out in 1978, on page 93 you'll find they say:
+"Pointerizing" code is not exactly a time-honored speedup technique. It has had it's ups and downs as processor architectures and compilers have evolved until modern times. If you look at the first edition of [K&R](https://archive.org/details/TheCProgrammingLanguageFirstEdition) that came out in 1978, on page 93 you'll find they say:
 
 > "In C there is a strong relationship between pointers and arrays, strong enough that pointers and arrays should really be treated simultaneously. Any operation that can be achieved by array subscripting can also be done with pointers. The pointer version will in general be faster but, at least to the uninitiated, somewhat harder to grasp immediately."
 
@@ -63,6 +63,8 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
 
     100000: indexed 9073 ms, pointerized 8997 ms -- 0.8 %
 
+Both x64 processors are showing performance improvements with pointerized code. The Raspberry Pi is showing a very small and possibly insignificant improvement. At least pointerized code is not significantly slower on the Raspberry Pi.
 
+If you want to try the benchmark program yourself run the python script bench.py. It compiles the program, collects some information about your environment and displays it along with the benchmark result.
 
 
