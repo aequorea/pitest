@@ -44,7 +44,7 @@ which is substantially similar to the is2() routine found in [Jon Bentley's Unix
         }
     }
 
-We tested these routines on linux using the gcc compiler with -O3 optimization. We sorted arrays of 100,000 random integers. Here are some results. The percentage shown is the improvement of the pointerized routine over the indexed one.
+We tested these routines on linux using the gcc compiler with -O3 optimization. We sorted arrays of 100,000 random integers. Here are some results. The percentages shown are the improvement of the pointerized routine over the indexed one.
 
     Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
