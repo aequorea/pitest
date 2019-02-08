@@ -48,23 +48,21 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
 
     Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
-
     100000: indexed 1127 ms, pointerized 901 ms -- 25.2 %
-
 
     Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
-
     100000: indexed 4170 ms, pointerized 3685 ms -- 13.2 %
     
-    
-      ARMv7 Processor rev 4 (v7l)
-    gcc (Raspbian 6.3.0-18+rpi1+deb9u1) 6.3.0 20170516
+    AMD Athlon(tm) 64 Processor 3500+
+    gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+    100000: indexed 3953 ms, pointerized 3938 ms -- 0.4 %
 
+    ARMv7 Processor rev 4 (v7l)
+    gcc (Raspbian 6.3.0-18+rpi1+deb9u1) 6.3.0 20170516
     100000: indexed 9073 ms, pointerized 8997 ms -- 0.8 %
 
-Both x64 processors are showing performance improvements with pointerized code. The Raspberry Pi is showing a very small and possibly insignificant improvement. At least pointerized code is not significantly slower on the Raspberry Pi.
+The more recent x64 processors are showing performance improvements with pointerized code. The older Athlon 64 and Raspberry Pi are showing a very small and possibly insignificant improvement. At least pointerized code is not significantly slower on these machines.
 
 If you want to try the benchmark program yourself run the python script bench.py. It compiles the program, collects some information about your environment and displays it along with the benchmark result.
-
 
