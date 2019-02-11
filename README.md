@@ -58,6 +58,10 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     Apple LLVM version 10.0.0 (clang-1000.10.44.4)
     100000: indexed 3750 ms, pointerized 3191 ms -- 17.5 %
 
+    AMD E-350 Processor
+    gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+    100000: indexed 6399 ms, pointerized 5636 ms -- 13.5 %
+
     AMD Athlon(tm) 64 Processor 3500+
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
     100000: indexed 3953 ms, pointerized 3938 ms -- 0.4 %
