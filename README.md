@@ -44,7 +44,7 @@ which is substantially similar to the is2() routine found in [Jon Bentley's Unix
         }
     }
 
-We tested these routines on linux using the gcc compiler with -O3 optimization. On a mac we used clang also with the -O3 optimization. We sorted arrays of 100,000 random integers. Here are some results. The percentages shown are the improvement of the pointerized routine over the indexed one.
+We tested these routines on linux using the gcc compiler with -O3 optimization. We sorted arrays of 100,000 random integers. Here are some results. The percentages shown are the improvement of the pointerized routine over the indexed one.
 
     Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
@@ -54,10 +54,6 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
     100000: indexed 4170 ms, pointerized 3685 ms -- 13.2 %
     
-    Intel(R) Core(TM)2 Duo CPU     U9600  @ 1.60GHz
-    Apple LLVM version 10.0.0 (clang-1000.10.44.4)
-    100000: indexed 3750 ms, pointerized 3191 ms -- 17.5 %
-
     AMD E-350 Processor
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
     100000: indexed 6399 ms, pointerized 5636 ms -- 13.5 %
