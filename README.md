@@ -68,5 +68,5 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
 
 The more recent x64 processors are showing performance improvements with pointerized code. The older Athlon 64 and Raspberry Pi are showing a very small and possibly insignificant improvement. At least pointerized code is not significantly slower on these machines.
 
-If you want to try the benchmark program yourself on linux run the python script bench.py. On a mac run macbench.py. It compiles the program, collects some information about your environment and displays it along with the benchmark result.
+If you want to try the benchmark program yourself on linux run the python script bench.py. It compiles the program, collects some information about your environment and displays it along with the benchmark result. You'll need to install the command line development tools.
 
