@@ -50,17 +50,21 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
     100000: indexed 1127 ms, pointerized 901 ms -- 25.2 %
 
-    Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
-    gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
-    100000: indexed 4170 ms, pointerized 3685 ms -- 13.2 %
-    
     Intel(R) Core(TM)2 Duo CPU     U9600  @ 1.60GHz
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
     100000: indexed 3884 ms, pointerized 3169 ms -- 22.6 %
    
+    Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
+    gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+    100000: indexed 4170 ms, pointerized 3685 ms -- 13.2 %
+    
     AMD E-350 Processor
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
     100000: indexed 6399 ms, pointerized 5636 ms -- 13.5 %
+
+    AMD Athlon(tm) II X2 260 Processor
+    gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
+    100000: indexed 2356 ms, pointerized 2346 ms -- 0.4 %
 
     AMD Athlon(tm) 64 Processor 3500+
     gcc (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
