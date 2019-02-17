@@ -88,6 +88,9 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     gcc-8 (Ubuntu 8.2.0-1ubuntu2~18.04) 8.2.0
     100000: indexed 969 ms, pointerized 903 ms -- 7.3 %
 
+    Intel(R) Pentium(R) CPU  J2900  @ 2.41GHz
+    gcc-8 (Ubuntu 8.2.0-1ubuntu2~18.04) 8.2.0
+    100000: indexed 4277 ms, pointerized 3689 ms -- 16.0 %
 
 
 
