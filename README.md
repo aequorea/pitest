@@ -76,6 +76,10 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     
     -----
     
+    AMD Athlon(tm) 64 Processor 3500+
+    gcc-8 (Ubuntu 8.2.0-1ubuntu2~18.04) 8.2.0
+    100000: indexed 4122 ms, pointerized 3990 ms -- 3.3 %
+
     AMD Athlon(tm) II X2 260 Processor
     gcc-8 (Ubuntu 8.2.0-1ubuntu2~18.04) 8.2.0
     100000: indexed 2344 ms, pointerized 2352 ms -- -0.3 %
