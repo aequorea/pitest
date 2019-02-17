@@ -96,6 +96,9 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     gcc-8 (Homebrew GCC 8.2.0) 8.2.0
     100000: indexed 3869 ms, pointerized 3206 ms -- 20.7 %
 
+    AMD E-350 Processor
+    gcc-8 (Ubuntu 8.2.0-1ubuntu2~18.04) 8.2.0
+    100000: indexed 6634 ms, pointerized 6260 ms -- 6.0 %
 
 
 The more recent x64 processors are showing performance improvements with pointerized code. The older Athlon 64 and Raspberry Pi are showing a very small and possibly insignificant improvement. At least pointerized code is not significantly slower on these machines.
