@@ -73,6 +73,13 @@ We tested these routines on linux using the gcc compiler with -O3 optimization. 
     ARMv7 Processor rev 4 (v7l)
     gcc (Raspbian 6.3.0-18+rpi1+deb9u1) 6.3.0 20170516
     100000: indexed 9073 ms, pointerized 8997 ms -- 0.8 %
+    
+    -----
+    
+    AMD Athlon(tm) II X2 260 Processor
+    gcc-8 (Ubuntu 8.2.0-1ubuntu2~18.04) 8.2.0
+    100000: indexed 2344 ms, pointerized 2352 ms -- -0.3 %
+
 
 The more recent x64 processors are showing performance improvements with pointerized code. The older Athlon 64 and Raspberry Pi are showing a very small and possibly insignificant improvement. At least pointerized code is not significantly slower on these machines.
 
