@@ -19,4 +19,4 @@ The incantation goes something like this:
     brew upgrade
     brew install gcc@8
 
-
+It may be possible to install homebrew on the linux subsystem of a Windows machine too. So you may be able to try things out there as well. I haven't tested this though.
