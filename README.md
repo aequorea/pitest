@@ -9,7 +9,7 @@ You'll need to install gcc on your system. On linux it may already be there. Or 
 
     sudo apt-get install build-essential
     
-On a mac you can install the [homebrew](https://brew.sh/) package and install gcc to get a version similar to what I tested on macOS. After installing homebrew:
+On a mac you can install the [homebrew](https://brew.sh/) package and install gcc. After installing homebrew:
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
