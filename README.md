@@ -19,8 +19,6 @@ The incantation goes something like this:
     brew upgrade
     brew install gcc
 
-At the moment, to use gcc you have to type gcc-8 instead of gcc. Apple links gcc to clang. As Homebrew updates gcc you may eventually need to install a package called gcc@8 to get version 8 of gcc. At this moment to get gcc7 we install gcc@7.
-
-Confused? If you ask me, it's easier than booting linux from a USB stick. That, and you can develop using clang or gcc.
+At the moment, to use gcc you have to type gcc-8 instead of gcc. Apple links gcc to clang.
 
 It may be possible to install homebrew on the linux subsystem of a Windows machine too. So you may be able to try things out there as well. I haven't tested this though.
