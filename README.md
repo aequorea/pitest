@@ -9,7 +9,7 @@ You'll need to install gcc on your system. On linux it may already be there. Or 
 
     sudo apt-get install build-essential
     
-On a mac you can install the [homebrew](https://brew.sh/) package and install gcc@8 to get a version similar to what I tested on macOS. After installing homebrew:
+On a mac you can install the [homebrew](https://brew.sh/) package and install gcc to get a version similar to what I tested on macOS. After installing homebrew:
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -17,6 +17,8 @@ The incantation goes something like this:
 
     brew update
     brew upgrade
-    brew install gcc@8
+    brew install gcc
+
+At the moment, to use gcc you have to type gcc-8 instead of gcc. Apple links gcc to clang. As Homebrew updates gcc you may eventually need to install a package called gcc@8 to get version 8 of gcc. At this moment to get gcc7 we install gcc@7.
 
 It may be possible to install homebrew on the linux subsystem of a Windows machine too. So you may be able to try things out there as well. I haven't tested this though.
